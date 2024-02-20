@@ -1,3 +1,3 @@
-import CustomeButton from '@/components/UI/CustomeButton.vue';
+import CustomButton from '@/components/UI/CustomButton.vue';
 import CustomInput from '@/components/UI/CustomInput.vue';
-export default [ CustomInput, CustomeButton] 
+export default [ CustomInput, CustomButton] 

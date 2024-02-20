@@ -1,7 +1,10 @@
 <script lang="ts">
 export default {
-    name: "custom-input"
+    name: "CustomInput"
 }
+</script>
+<script lang="ts" setup>
+
 </script>
 <template>
     <input class="form-input" type="text">

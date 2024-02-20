@@ -1,7 +1,9 @@
 <script lang="ts">
 export default {
-    name: "custom-button"
+    name: "CustomButton"
 }
+</script>
+<script lang="ts" setup>
 </script>
 <template>
     <button class="btn">
