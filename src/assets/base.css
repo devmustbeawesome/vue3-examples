@@ -31,3 +31,27 @@
 body {
   min-height: 100vh;
 }
+
+
+.container {
+  width: 100vw;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  /* main {
+    display: flex;
+  } */
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

@@ -3,7 +3,11 @@
 </script>
 
 <template>
-  <h1 class="green">{{ "test" }}</h1>
+  <div class="container">
+    <h1>Main</h1>
+    <CustomButton>test</CustomButton>
+    <CustomInput></CustomInput>
+  </div>
 </template>
 
 <style scoped></style>

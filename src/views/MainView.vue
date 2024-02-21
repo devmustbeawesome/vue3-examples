@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import MainComponent from '../components/MainComponent.vue'
+
+import MainComponent from '@/components/MainComponent.vue'
 </script>
 
 <template>
