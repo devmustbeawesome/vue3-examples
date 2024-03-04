@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 const links = ref([
   { href: '/', name: 'Main' },
-  { href: '/todo_list', name: 'Todo' }
+  { href: '/todos', name: 'Todo' }
 ])
 </script>
 
