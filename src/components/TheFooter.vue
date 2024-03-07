@@ -3,7 +3,9 @@ import { ref } from 'vue'
 
 const links = ref([
   { href: '/', name: 'Main' },
-  { href: '/todos', name: 'Todo' }
+  { href: '/todos', name: 'Todo' },
+  { href: '/test', name: 'Test' },
+  { href: '/fetch-commits', name: 'Fetch commits' }
 ])
 </script>
 
