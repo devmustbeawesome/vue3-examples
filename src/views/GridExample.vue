@@ -14,7 +14,13 @@ const gridData = [
   <div class="container">
     <h1 class="page_title">Grid example</h1>
     <div class="input-wrapper">
-      <VInput v-model="searchQuery" />
+      <label for="searchGrid">
+        Search
+        <div class="search-icon">
+          <IMagnifier />
+        </div>
+      </label>
+      <VInput id="searchGrid" :type="'search'" v-model="searchQuery" />
     </div>
     <VGrid :data="gridData" :columns="gridColumns" :search="searchQuery" />
   </div>
@@ -23,6 +29,14 @@ const gridData = [
 .input-wrapper {
   max-width: 500px;
   margin-bottom: 20px;
+}
+.search-icon svg {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.input-wrapper {
+  position: relative;
 }
 .page_title {
   margin-top: 20px;
