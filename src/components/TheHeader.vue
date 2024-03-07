@@ -6,7 +6,7 @@ const links = ref([
   { href: '/todos', name: 'Todo' },
   { href: '/fetch-commits', name: 'Fetch commits' },
   { href: '/grid-example', name: 'Grid Example' },
-  { href: '/test', name: 'Test' },
+  { href: '/test', name: 'Test' }
 ])
 </script>
 

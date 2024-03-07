@@ -16,33 +16,29 @@ const {
 </script>
 
 <template>
-    <div class="container">
-      <h1 class="page_title">Test</h1>
-      <select v-model="currentBranch" class="choose_brach">
-        <option :value="branch" v-for="branch in branches" :key="branch">
-          {{ branch }}
-        </option>
-      </select>
-      <p class="current_branch">Current branch: {{ currentBranch }}</p>
-      <div v-if="isPendingCommits">Loading...</div>
-      <div v-else-if="!errorCommits">
-        <div
-          v-for="{ html_url, sha, author, commit } in dataCommits"
-          :key="sha"
-          class="commit-item"
-        >
-          <p>
-            <a :href="html_url" target="_blank">{{ sha.slice(0, 7) }}</a> -
-            {{ commit.message.slice(0, commit.message.indexOf('\n')) }}
-          </p>
-          <p>
-            by <a :href="author.html_url" target="_blank">{{ author.login }}</a> at
-            {{ commit.author.date.replace(/T|Z/g, ' ') }}
-          </p>
-        </div>
+  <div class="container">
+    <h1 class="page_title">Test</h1>
+    <select v-model="currentBranch" class="choose_brach">
+      <option :value="branch" v-for="branch in branches" :key="branch">
+        {{ branch }}
+      </option>
+    </select>
+    <p class="current_branch">Current branch: {{ currentBranch }}</p>
+    <div v-if="isPendingCommits">Loading...</div>
+    <div v-else-if="!errorCommits">
+      <div v-for="{ html_url, sha, author, commit } in dataCommits" :key="sha" class="commit-item">
+        <p>
+          <a :href="html_url" target="_blank">{{ sha.slice(0, 7) }}</a> -
+          {{ commit.message.slice(0, commit.message.indexOf('\n')) }}
+        </p>
+        <p>
+          by <a :href="author.html_url" target="_blank">{{ author.login }}</a> at
+          {{ commit.author.date.replace(/T|Z/g, ' ') }}
+        </p>
       </div>
-      <pre v-else>{{ errorCommits }}</pre>
     </div>
+    <pre v-else>{{ errorCommits }}</pre>
+  </div>
 </template>
 
 <style scoped>

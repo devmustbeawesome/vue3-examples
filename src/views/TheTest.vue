@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="container">
-      <h1 class="page_title">Test</h1>
-    </div>
+  <div class="container">
+    <h1 class="page_title">Test</h1>
+  </div>
 </template>
 
 <style scoped>
