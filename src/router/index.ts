@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeViewVue from '../views/HomeView.vue'
+import HomeViewVue from '@/views/HomeView.vue'
 import TodoViewVue from '@/views/TodoView.vue'
 import TheTestViewVue from '@/views/TheTest.vue'
-import FetchCommits from '@/views/FetchCommits.vue'
-import GridExample from '@/views/GridExample.vue'
+import FetchCommitsViewVue from '@/views/FetchCommits.vue'
+import GridExampleViewVue from '@/views/GridExample.vue'
+import TreeBuildingViewVue from '@/views/TreeBuilding.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,12 +27,17 @@ const router = createRouter({
     {
       path: '/fetch-commits',
       name: 'fetch-commits',
-      component: FetchCommits
+      component: FetchCommitsViewVue
     },
     {
       path: '/grid-example',
       name: 'grid-example',
-      component: GridExample
+      component: GridExampleViewVue
+    },
+    {
+      path: '/tree',
+      name: 'tree',
+      component: TreeBuildingViewVue
     }
   ]
 })
