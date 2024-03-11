@@ -7,6 +7,7 @@ const links = ref([
   { href: '/fetch-commits', name: 'Fetch commits' },
   { href: '/grid-example', name: 'Grid Example' },
   { href: '/tree', name: 'Tree' },
+  { href: '/setting-characteristics', name: 'Setting Characteristics' },
 
   { href: '/test', name: 'Test' }
 ])
@@ -32,7 +33,7 @@ const links = ref([
     </div>
   </header>
 </template>
-<style>
+<style scoped>
 header {
   padding: 10px 20px;
   border-bottom: #00bd7e solid 1px;
@@ -87,7 +88,7 @@ nav a:first-of-type {
 
   nav {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 </style>

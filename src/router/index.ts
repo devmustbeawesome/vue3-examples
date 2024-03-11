@@ -5,6 +5,7 @@ import TheTestViewVue from '@/views/TheTest.vue'
 import FetchCommitsViewVue from '@/views/FetchCommits.vue'
 import GridExampleViewVue from '@/views/GridExample.vue'
 import TreeBuildingViewVue from '@/views/TreeBuilding.vue'
+import SettingCharacteristicsViewVue from '@/views/SettingCharacteristics.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: '/tree',
       name: 'tree',
       component: TreeBuildingViewVue
+    },
+    {
+      path: '/setting-characteristics',
+      name: 'setting-characteristics',
+      component: SettingCharacteristicsViewVue
     }
   ]
 })
