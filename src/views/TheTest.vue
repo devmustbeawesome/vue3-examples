@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import VisualizedTimer from '@/components/VisualizedTimer.vue'
 import { ref } from 'vue'
 
 const modalShowed = ref(false)
@@ -16,7 +17,9 @@ const showModal = () => {
         <h2>#header</h2>
       </template>
       <template #body>
-        <div>#body</div>
+        <div>
+          <VisualizedTimer />
+        </div>
       </template>
       <template #footer>
         <div class="form_footer">
