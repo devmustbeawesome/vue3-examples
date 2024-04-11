@@ -6,6 +6,7 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 import ui from '@/components/UI'
+import icons from '@/components/icons'
 import directives from '@/directives'
 
 const app = createApp(App)
@@ -13,6 +14,9 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 ui.forEach((component) => {
+  app.component(component.name, component)
+})
+icons.forEach((component) => {
   app.component(component.name, component)
 })
 directives.forEach((directive) => {

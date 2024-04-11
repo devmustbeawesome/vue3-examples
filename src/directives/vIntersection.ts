@@ -5,7 +5,7 @@ const mounted = (el: any, binding: any) => {
     rootMargin: '0px',
     threshold: 1.0
   }
-  const callback = function (entries: any, observer: any) {
+  const callback = function (entries: any) {
     if (entries[0].isIntersecting) binding.value()
   }
   observer = new IntersectionObserver(callback, options)
