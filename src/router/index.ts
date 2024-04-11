@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeViewVue from '@/views/HomeView.vue'
 import TodoViewVue from '@/views/TodoView.vue'
-import TheTestViewVue from '@/views/TheTest.vue'
+import ModalTimerViewVue from '@/views/ModalTimer.vue'
 import FetchCommitsViewVue from '@/views/FetchCommits.vue'
 import GridExampleViewVue from '@/views/GridExample.vue'
 import TreeBuildingViewVue from '@/views/TreeBuilding.vue'
@@ -21,9 +21,9 @@ const router = createRouter({
       component: TodoViewVue
     },
     {
-      path: '/test',
-      name: 'test',
-      component: TheTestViewVue
+      path: '/modal-timer',
+      name: 'modal-timer',
+      component: ModalTimerViewVue
     },
     {
       path: '/fetch-commits',

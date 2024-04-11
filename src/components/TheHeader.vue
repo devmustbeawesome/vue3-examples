@@ -8,8 +8,7 @@ const links = ref([
   { href: '/grid-example', name: 'Grid Example' },
   { href: '/tree', name: 'Tree' },
   { href: '/setting-characteristics', name: 'Setting Characteristics' },
-
-  { href: '/test', name: 'Test' }
+  { href: '/modal-timer', name: 'Modal and Timer' }
 ])
 </script>
 
