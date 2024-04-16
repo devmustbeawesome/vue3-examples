@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import MenuWithMoreButton from './MenuWithMoreButton.vue'
 
 const links = ref([
   { href: '/', name: 'Main' },
@@ -14,21 +15,11 @@ const links = ref([
 
 <template>
   <footer>
-    <div class="container">
+    <div class="container footer-container">
       <RouterLink to="/">
         <img alt="Logo" class="logo" src="@/assets/logo.svg" width="108.8" height="50" />
       </RouterLink>
-
-      <div class="footer_nav-wrapper">
-        <nav>
-          <RouterLink
-            v-for="(link, index) in links"
-            :key="index"
-            :to="link.href"
-            :text="link.name"
-          ></RouterLink>
-        </nav>
-      </div>
+      <MenuWithMoreButton :links="links" />
     </div>
   </footer>
 </template>
@@ -36,58 +27,15 @@ const links = ref([
 footer {
   padding: 10px 20px;
   border-top: #00bd7e solid 1px;
-  align-items: center;
 }
 
 .logo {
   display: block;
-  margin: 0 auto 1rem;
+  margin: 0 1rem 0 0;
 }
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-}
-
-nav a.router-link-exact-active {
-  color: #00bd7e;
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid #00bd7e;
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  footer {
-    display: flex;
-    place-items: center;
-  }
-
-  .logo {
-    margin: 0 1rem 0 0;
-  }
-
-  footer .container {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  nav {
-    text-align: left;
-    font-size: 1.5rem;
-  }
+footer .container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 </style>
