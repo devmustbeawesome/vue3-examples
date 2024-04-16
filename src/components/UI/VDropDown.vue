@@ -66,6 +66,7 @@ const isHovered = ref(false)
 }
 
 .dropdown-dialog {
+  right: 0;
   position: absolute;
   border: 1px solid var(--color-border);
   border-radius: 5px;
