@@ -6,3 +6,4 @@
 - svg graph like settings characteristics
 - modal
 - timer that starts when you open modal
+- feature with responsive menu
