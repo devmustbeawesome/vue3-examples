@@ -14,7 +14,7 @@ const gridData = [
   <div class="container">
     <h1 class="page_title">Grid example</h1>
     <div class="input-wrapper">
-      <label for="searchGrid">
+      <label for="searchGrid" class="input-label">
         Search
         <div class="search-icon">
           <IMagnifier />
@@ -30,12 +30,13 @@ const gridData = [
   max-width: 500px;
   margin-bottom: 20px;
 }
-.search-icon svg {
+.search-icon {
   position: absolute;
-  bottom: 10px;
+  bottom: -35px;
   right: 10px;
 }
-.input-wrapper {
+.input-label {
+  display: block;
   position: relative;
 }
 .page_title {
