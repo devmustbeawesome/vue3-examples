@@ -12,8 +12,8 @@ const treeData = useStorage('treeData', { id: 1, name: 'Root', children: [], ope
     <ul>
       <TreeItem
         v-model="treeData"
-        @remove:item="console.log('test')"
-        @update:item="console.log('test')"
+        @remove:item="console.log('removed')"
+        @update:item="console.log('updated')"
         :is-root="true"
       />
     </ul>
